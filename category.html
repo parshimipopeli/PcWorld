@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="PCWOrld est l'une des références de la vente d'ordinateurs, de composants PC et de périphériques en France. Trouvez votre matériel au meilleur prix, avec des promotions et des soldes régulières, une livraison rapide et une interface agréable ! - Page Article">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/Bootstrap/css/bootstrap.min.css" type="text/css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <title>PCWorld - Site référence pour l'achat de tours, composants et périphériques pour PC - Article</title>
+</head>
+
+<body>
+    <div class="container-fluid position-relative">
+        <header class="container-fluid row col-12" id="header">
+            <div class="col-6 col-sm-2">
+                <a href="index.html"><img class="img-fluid" id="logo" src="image/logos_icons/logo_pcworld.png"
+                        alt="Logo PCWorld" title="Logo PCWorld"></a>
+            </div>
+            <div id="searchBar" class="col-12 col-sm-8 order-last order-sm-0 align-self-center mb-2 mt-2">
+                <div class="ui-widget input-group md-form form-sm form-2 pl-0">
+
+                    <input id="tags" class="form-control my-0 py-1" type="text" placeholder="Chercher un article"
+                        aria-label="Search">
+                    <div class="input-group-append">
+                        <a href="product.html" class="input-group-text red lighten-3" id="basic-text1">
+                            <i class="fas fa-search text-grey" aria-hidden="true">
+                            </i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-2 col-sm-1 align-self-center text-center mb-2 mt-2 pl-0 pr-0">
+                <a href="customer-infos.html"><i class="fas fa-user white-icon"></i></a>
+            </div>
+            <div class="col-2 col-sm-1 align-self-center text-center mb-2 mt-2 pl-0 pr-0">
+                <a href="cart.html"><i class="fas fa-shopping-basket white-icon"></i></a>
+            </div>
+            <div class="col-2 col-sm-1 align-self-center text-center search-phone mb-2 mt-2 pl-0 pr-0">
+                <i class="fas fa-search white-icon"></i>
+            </div>
+        </header>
+
+
+
+
+
+
+
+        <section id="main">
+            <div id="menu-sm">
+                <div class="container-fluid">
+                    <div class="row ml-0 mr-0 pl-0 pr-0">
+                        <div class="col-lg-8 offset-lg-2 bg-menu-btn pl-0 pr-0">
+                            <div class="row ml-0 mr-0 pl-0 pr-0 justify-content-between position-static">
+                                <button type="button" id="mega-btn1"
+                                    class="btn btn-primary shadow-sm col-4 ml-0 mr-0 pl-0 pr-0">PC &
+                                    Ordinateurs</button>
+                                <button type="button" id="mega-btn2"
+                                    class="btn btn-primary shadow-sm col-4  ml-0 mr-0 pl-0 pr-0">Composant
+                                    PC</button>
+                                <button type="button" id="mega-btn3"
+                                    class="btn btn-primary shadow-sm col-4  ml-0 mr-0 pl-0 pr-0">Périphérique
+                                    PC</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mega-menu1" class="container-fluid position-absolute">
+                    <div class="row ml-0 mr-0 pl-0 pr-0">
+                        <div class="col-lg-8 offset-lg-2 bg-menu">
+                            <div class="row ">
+                                <div class="col-6 align-self-center ">
+                                    <div class="row">
+                                        <ul class="mega-menu-ul align-middle pl-3">
+                                            <li><a id="categ1" href="category.html">Ordinateur / PC Fixe</a></li>
+                                            <li><a id="categ2" href="category.html">Ordinateur portable</a></li>
+                                            <li><a id="categ3" href="category.html">Tablette tactile</a></li>
+                                            <li><a id="categ4" href="category.html">OS & Logiciels</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-6 text-center">
+                                    <img class="img-fluid menu-img" src="" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="mega-menu2" class="container-fluid position-absolute">
+                    <div class="row ml-0 mr-0 pl-0 pr-0">
+                        <div class="col-lg-8 offset-lg-2 bg-menu">
+                            <div class="row ">
+                                <div class="col-6 align-self-center ">
+                                    <div class="row">
+                                        <ul class="mega-menu-ul align-middle pl-3">
+                                            <li><a id="categ5" href="category.html">Cartes graphiques</a></li>
+                                            <li><a id="categ6" href="category.html">Processeur</a></li>
+                                            <li><a id="categ7" href="category.html">Carte Mère</a></li>
+                                            <li><a id="categ8" href="category.html">Mémoire / Stockage</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-6 text-center">
+                                    <img class="img-fluid menu-img" src="" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="mega-menu3" class="container-fluid position-absolute">
+                    <div class="row ml-0 mr-0 pl-0 pr-0">
+                        <div class="col-lg-8 offset-lg-2 bg-menu">
+                            <div class="row ">
+                                <div class="col-6 align-self-center ">
+                                    <div class="row">
+                                        <ul class="mega-menu-ul align-middle pl-3">
+                                            <li><a id="categ9" href="category.html">Ecrans ordinateur</a></li>
+                                            <li><a id="categ10" href="category.html">Claviers & souris</a></li>
+                                            <li><a id="categ11" href="category.html">Casque / Micro / Enceintes</a></li>
+                                            <li><a id="categ12" href="category.html">Manettes</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-6 text-center">
+                                    <img class="img-fluid menu-img" src="" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- NAVBAR PHONE -->
+            <nav id="menu-hamburger" class="navbar navbar-expand-lg navbar-light bg-green">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                PC & Ordinateurs
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="category.html">Ordinateur / PC Fixe</a>
+                                <a class="dropdown-item" href="category.html">Ordinateur portable</a>
+                                <a class="dropdown-item" href="category.html">Tablette tactile</a>
+                                <a class="dropdown-item" href="category.html">OS & Logiciels</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Composant PC
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="category.html">Cartes graphiques</a>
+                                <a class="dropdown-item" href="category.html">Processeur</a>
+                                <a class="dropdown-item" href="category.html">Carte Mère</a>
+                                <a class="dropdown-item" href="category.html">Mémoire & Stockage</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Périphérique PC
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="category.html">Ecrans ordinateur</a>
+                                <a class="dropdown-item" href="category.html">Claviers & souris</a>
+                                <a class="dropdown-item" href="category.html">Casque / Micro / Enceintes</a>
+                                <a class="dropdown-item" href="category.html">Manettes</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Filtres
+                            </a>
+                            <div id="phone-filter" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <!-- Div filter phone -->
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container-fluid position-relative" id="main">
+                <!-- Navbar filtres tablette -->
+                <nav id="filter-hamburger" class="navbar navbar-expand-lg navbar-light bg-green">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li id="tablet-filter" class="nav-item dropdown offset-5">
+                                <!-- Div filter en tablettre -->
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="row justify-content-around ml-0 mr-0 pl-0 pr-0 ">
+                    <form class="col-md-2 pl-0 pr-0 container-fluid  shadow-sm" id="bloc-filter">
+                        <h2 class="text-customer text-center">Filtres</h2>
+                        <div id="subFilter">
+                            <div class="subFilterMarque">
+                                <h3>Marque</h3>
+                                <div class="form-check">
+                                    <input data-filter="acer" class="form-check-input" type="checkbox" value="acer"
+                                        id="acer">
+                                    <label class="form-check-label" for="acer">
+                                        Acer
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input data-filter="aorus" class="form-check-input" type="checkbox" value="aorus"
+                                        id="aorus">
+                                    <label class="form-check-label" for="aorus">
+                                        Aorus
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input data-filter="asus" class="form-check-input" type="checkbox" value="asus"
+                                        id="asus">
+                                    <label class="form-check-label" for="asus">
+                                        Asus
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input data-filter="apple" class="form-check-input" type="checkbox" value="apple"
+                                        id="apple">
+                                    <label class="form-check-label" for="apple">
+                                        Apple
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input data-filter="bitdefender" class="form-check-input" type="checkbox"
+                                        value="bitdefender" id="bitdefender">
+                                    <label class="form-check-label" for="bitdefender">
+                                        BitDefender
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input data-filter="eset" class="form-check-input" type="checkbox" value="eset"
+                                        id="eset">
+                                    <label class="form-check-label" for="eset">
+                                        Eset
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input data-filter="materielnet" class="form-check-input" type="checkbox"
+                                        value="materielnet" id="materielnet">
+                                    <label class="form-check-label" for="materielnet">
+                                        Materiel.net
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input data-filter="microsoft" class="form-check-input" type="checkbox"
+                                        value="microsoft" id="microsoft">
+                                    <label class="form-check-label" for="microsoft">
+                                        Microsoft
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input data-filter="samsung" class="form-check-input" type="checkbox"
+                                        value="samsung" id="samsung">
+                                    <label class="form-check-label" for="samsung">
+                                        Samsung
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="subFilterPrix">
+                                <h3>Prix</h3>
+                                <div class="form-check">
+                                    <input data-filter="minus500" class="form-check-input" type="checkbox"
+                                        value="minus500" id="minus500">
+                                    <label class="form-check-label" for="minus500">
+                                        -500€
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input data-filter="500-1000" class="form-check-input" type="checkbox"
+                                        value="500-1000" id="500-1000">
+                                    <label class="form-check-label" for="500-1000">
+                                        500€ - 1000€
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input data-filter="1000-1500" class="form-check-input" type="checkbox"
+                                        value="1000-1500" id="1000-1500">
+                                    <label class="form-check-label" for="1000-1500">
+                                        1000€ - 1500€
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input data-filter="over1500" class="form-check-input" type="checkbox"
+                                        value="over1500" id="over1500">
+                                    <label class="form-check-label" for="over1500">
+                                        +1500€
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="col-md-9 container-fluid text-center shadow-sm" id="bloc">
+                        <div class="col-12 pl-0 pr-0">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Catégorie</li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <h1 class="text-customer">Catégorie</h1>
+                        <div class="container-fluid">
+                            <div id="product-categ" class="row ml-0 mr-0 justify-content-center text-center">
+                                <div class="card card-product col-12 col-md-3 shadow-sm materielnet over1500"
+                                    style="width: 18rem;">
+                                    <a href="product.html"><img src="image/categories/categorie1/article1 (2).jpg"
+                                            class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <a href="product.html">
+                                            <p class="card-text product-title">Materiel.net Blackbird [ PC Gamer ]</p>
+                                        </a>
+                                        <p class="card-text price">1 799€90</p>
+                                        <div id="addCart" class="pl-0 pr-0 align-self-center text-center">
+                                            <a href="cart.html">Ajouter au panier<i
+                                                    class="fas fa-cart-plus cart-icon"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-product col-12 col-md-3 shadow-sm materielnet 1000-1500"
+                                    style="width: 18rem;">
+                                    <a href="product.html"><img src="image/categories/categorie1/article2 (2).jpg"
+                                            class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <a href="product.html">
+                                            <p class="card-text product-title"> Materiel.net Chaos [ Win10 - PC Gamer ]
+                                            </p>
+                                        </a>
+                                        <p class="card-text price">1 279€90</p>
+                                        <div id="addCart" class="pl-0 pr-0 align-self-center text-center">
+                                            <a href="cart.html">Ajouter au panier<i
+                                                    class="fas fa-cart-plus cart-icon"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-product col-12 col-md-3 shadow-sm materielnet 1000-1500"
+                                    style="width: 18rem;">
+                                    <a href="product.html"><img src="image/categories/categorie1/article3 (2).jpg"
+                                            class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <a href="product.html">
+                                            <p class="card-text product-title">Materiel.net Firebird [ PC Gamer ]</p>
+                                        </a>
+                                        <p class="card-text price">1 499€90</p>
+                                        <div id="addCart" class="pl-0 pr-0 align-self-center text-center">
+                                            <a href="cart.html">Ajouter au panier<i
+                                                    class="fas fa-cart-plus cart-icon"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-product col-12 col-md-3 shadow-sm materielnet over1500"
+                                    style="width: 18rem;">
+                                    <a href="product.html"><img src="image/categories/categorie1/article4 (2).jpg"
+                                            class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <a href="product.html">
+                                            <p class="card-text product-title">Materiel.net HellFire [ Win10 - PC Gamer
+                                                ]</p>
+                                        </a>
+                                        <p class="card-text price">2 329€90</p>
+                                        <div id="addCart" class="pl-0 pr-0 align-self-center text-center">
+                                            <a href="cart.html">Ajouter au panier<i
+                                                    class="fas fa-cart-plus cart-icon"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-product col-12 col-md-3 shadow-sm aorus over1500"
+                                    style="width: 18rem;">
+                                    <a href="product.html"><img src="image/categories/categorie2/article5 (2).jpg"
+                                            class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <a href="product.html">
+                                            <p class="card-text product-title">AORUS 15 SA-7FR0250W</p>
+                                        </a>
+                                        <p class="card-text price">1 899€95</p>
+                                        <div id="addCart" class="pl-0 pr-0 align-self-center text-center">
+                                            <a href="cart.html">Ajouter au panier<i
+                                                    class="fas fa-cart-plus cart-icon"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-product col-12 col-md-3 shadow-sm asus over1500"
+                                    style="width: 18rem;">
+                                    <a href="product.html"><img src="image/categories/categorie2/article6 (1).jpg"
+                                            class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <a href="product.html">
+                                            <p class="card-text product-title">ASUS B9 B9440FA-GV0018R</p>
+                                        </a>
+                                        <p class="card-text price">1 899€95</p>
+                                        <div id="addCart" class="pl-0 pr-0 align-self-center text-center">
+                                            <a href="cart.html">Ajouter au panier<i
+                                                    class="fas fa-cart-plus cart-icon"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-product col-12 col-md-3 shadow-sm asus minus500"
+                                    style="width: 18rem;">
+                                    <a href="product.html"><img src="image/categories/categorie2/article7 (2).jpg"
+                                            class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <a href="product.html">
+                                            <p class="card-text product-title">ASUS Chromebook C423NA-EB0048</p>
+                                        </a>
+                                        <p class="card-text price">449€95</p>
+                                        <div id="addCart" class="pl-0 pr-0 align-self-center text-center">
+                                            <a href="cart.html">Ajouter au panier<i
+                                                    class="fas fa-cart-plus cart-icon"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-product col-12 col-md-3 shadow-sm asus 500-1000"
+                                    style="width: 18rem;">
+                                    <a href="product.html"><img src="image/categories/categorie2/article8 (2).jpg"
+                                            class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <a href="product.html">
+                                            <p class="card-text product-title">ASUS FX570DD-DM002T</p>
+                                        </a>
+                                        <p class="card-text price">799€95</p>
+                                        <div id="addCart" class="pl-0 pr-0 align-self-center text-center">
+                                            <a href="cart.html">Ajouter au panier<i
+                                                    class="fas fa-cart-plus cart-icon"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-product col-12 col-md-3 shadow-sm apple 500-1000"
+                                    style="width: 18rem;">
+                                    <a href="product.html"><img src="image/categories/categorie3/article9 (1).jpg"
+                                            class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <a href="product.html">
+                                            <p class="card-text product-title">Apple iPad Air 2019</p>
+                                        </a>
+                                        <p class="card-text price">879€95</p>
+                                        <div id="addCart" class="pl-0 pr-0 align-self-center text-center">
+                                            <a href="cart.html">Ajouter au panier<i
+                                                    class="fas fa-cart-plus cart-icon"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-product col-12 col-md-3 shadow-sm apple over1500"
+                                    style="width: 18rem;">
+                                    <a href="product.html"><img src="image/categories/categorie3/article10 (1).jpg"
+                                            class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <a href="product.html">
+                                            <p class="card-text product-title">Apple iPad Pro</p>
+                                        </a>
+                                        <p class="card-text price">1 679€95</p>
+                                        <div id="addCart" class="pl-0 pr-0 align-self-center text-center">
+                                            <a href="cart.html">Ajouter au panier<i
+                                                    class="fas fa-cart-plus cart-icon"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-product col-12 col-md-3 shadow-sm samsung 500-1000"
+                                    style="width: 18rem;">
+                                    <a href="product.html"><img src="image/categories/categorie3/article11 (2).jpg"
+                                            class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <a href="product.html">
+                                            <p class="card-text product-title">Samsung Galaxy TAB S3</p>
+                                        </a>
+                                        <p class="card-text price">619€95</p>
+                                        <div id="addCart" class="pl-0 pr-0 align-self-center text-center">
+                                            <a href="cart.html">Ajouter au panier<i
+                                                    class="fas fa-cart-plus cart-icon"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-product col-12 col-md-3 shadow-sm samsung 500-1000"
+                                    style="width: 18rem;">
+                                    <a href="product.html"><img src="image/categories/categorie3/article12 (1).jpg"
+                                            class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <a href="product.html">
+                                            <p class="card-text product-title">Samsung Galaxy Tab S6</p>
+                                        </a>
+                                        <p class="card-text price">799€95</p>
+                                        <div id="addCart" class="pl-0 pr-0 align-self-center text-center">
+                                            <a href="cart.html">Ajouter au panier<i
+                                                    class="fas fa-cart-plus cart-icon"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-product col-12 col-md-3 shadow-sm microsoft minus500"
+                                    style="width: 18rem;">
+                                    <a href="product.html"><img src="image/categories/categorie4/article13.jpg"
+                                            class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <a href="product.html">
+                                            <p class="card-text product-title">Microsoft Windows 10 Home 32/64 bits -
+                                                Version clé USB
+                                            </p>
+                                        </a>
+                                        <p class="card-text price">154€95</p>
+                                        <div id="addCart" class="pl-0 pr-0 align-self-center text-center">
+                                            <a href="cart.html">Ajouter au panier<i
+                                                    class="fas fa-cart-plus cart-icon"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-product col-12 col-md-3 shadow-sm microsoft minus500"
+                                    style="width: 18rem;">
+                                    <a href="product.html"><img src="image/categories/categorie4/article14.jpg"
+                                            class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <a href="product.html">
+                                            <p class="card-text product-title">Microsoft Office 365 Famille</p>
+                                        </a>
+                                        <p class="card-text price">94€96</p>
+                                        <div id="addCart" class="pl-0 pr-0 align-self-center text-center">
+                                            <a href="cart.html">Ajouter au panier<i
+                                                    class="fas fa-cart-plus cart-icon"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-product col-12 col-md-3 shadow-sm bitdefender minus500"
+                                    style="width: 18rem;">
+                                    <a href="product.html"><img src="image/categories/categorie4/article15.jpg"
+                                            class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <a href="product.html">
+                                            <p class="card-text product-title">Bitdefender Antivirus Plus 2019</p>
+                                        </a>
+                                        <p class="card-text price">17€90</p>
+                                        <div id="addCart" class="pl-0 pr-0 align-self-center text-center">
+                                            <a href="cart.html">Ajouter au panier<i
+                                                    class="fas fa-cart-plus cart-icon"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-product col-12 col-md-3 shadow-sm bitdefender minus500"
+                                    style="width: 18rem;">
+                                    <a href="product.html"><img src="image/categories/categorie4/article16.jpg"
+                                            class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                        <a href="product.html">
+                                            <p class="card-text product-title">Bitdefender Antivirus Plus 2019</p>
+                                        </a>
+                                        <p class="card-text price">49€96</p>
+                                        <div id="addCart" class="pl-0 pr-0 align-self-center text-center">
+                                            <a href="cart.html">Ajouter au panier<i
+                                                    class="fas fa-cart-plus cart-icon"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+        </section>
+
+
+
+
+
+        <footer class="container-fluid" id="footer">
+            <div class="row col-12 mx-auto">
+                <div class=" col-12 col-sm-2 text-center hidden-footer-link">
+                    <a href="qui-sommes-nous.html" class="text-white ">
+                        <p>Qui sommes-nous</p>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-2 text-center hidden-footer-link">
+                    <a href="conditions-generales.html" class="text-white">
+                        <p>Conditions génerales de vente</p>
+                    </a>
+                </div>
+                <div class="col-12 order-first order-sm-0 col-sm-2 offset-0 offset-sm-1 align-self-center">
+                    <div class="row justify-content-center">
+                        <div>
+                            <a href=""><i class="fab fa-facebook-square white-icon  icon-footer"></i></a>
+                        </div>
+                        <div>
+                            <a href=""><i class="fab fa-instagram white-icon icon-footer"></i></a>
+                        </div>
+                        <div>
+                            <a href=""><i class="fab fa-twitter-square white-icon icon-footer"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 offset-0 offset-sm-3 text-center hidden-footer-link">
+                    <a href="mentions-legales.html" class="text-white">
+                        <p>Mentions legales</p>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
